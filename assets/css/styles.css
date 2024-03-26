@@ -1,0 +1,71 @@
+body, html {
+  background-color: black;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.dot-matrix-atas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.dot-matrix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.with-border-atas {
+  border: 30px solid darkred;
+  border-radius: 15px;
+}
+
+.with-border {
+  border: 30px solid darkred;
+  border-radius: 15px;
+}
+
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.dot {
+  width: 250px;
+  height: 225px;
+  background-color: white;
+  border: 2px solid #ccc;
+  margin: 1px;
+  transition: transform 0.3s ease-in-out;
+/*  font-family: digital7;*/
+  font-size: 195px;
+  text-align: center;
+  font-weight: bold;
+  /*background:-webkit-linear-gradient(top, #ff12fb, transparent);
+  background: -moz-linear-gradient(right, #ff12fb, transparent);
+  background: -ms-linear-gradient(right, #ff12fb, transparent);
+  background: -o-linear-gradient(top, #ff12fb, transparent);*/
+}
+
+.dot:hover {
+    transform: perspective(500px) rotateY(10deg);
+    animation: zoomAnimation 1s infinite;
+    transform-origin: center;
+}
+/*@font-face {
+    font-family: digital7;
+    src: url('digital-7.woff') format('woff');
+}*/
