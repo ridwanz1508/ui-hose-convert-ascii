@@ -1,4 +1,4 @@
-#WEB_HOSE#
+# WEB_HOSE #
 
 The web application retrieves character data from a Programmable Logic Controller (PLC) via an API and stores it in a MySQL database. Initially, the data from the PLC is in decimal format. Before it gets updated in the database, a trigger converts this decimal data to hexadecimal format.
 
